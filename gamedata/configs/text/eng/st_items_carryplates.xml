@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+	<string id="st_zona_carrierplate1_name">
+		<text>Stalker Plate Carrier</text>
+	</string>
+	<string id="st_zona_carrierplate1_descr">
+				<text>A Rough zone assembled carrier (SPC). Likely put together, stolen or outdated by newer models in hardware. Taken from stockpiles of decommissioned gear,
+        distributed via shady means or assembled by experimenting tinkerers looking to use whatever they can on hand to put together a stable vest.
+        Mainly for use by lesser organised factions who need a quick and affordable vest for all Carrier needs.
+
+        While it may not be the "best" Carrier Rig in the zone, a lot of stalkers have reported it working as more so a "Jack Of All Trades" Kind of Carrier.
+        Its not reliable enough to protect your vitals in an intense gunfight or save you from a charging boar, 
+		it is a much more prefered option than braving the storm with nothing..\n \n
+%c[ui_gray_3]CHARACTERISTICS:\n
+%c[d_blue] • %c[ui_gray_2] Civilian Use\n
+%c[d_blue] • %c[ui_gray_2] Increase Armor Plate Durability\n
+%c[d_blue] • %c[ui_gray_2] Increase Ballistic Protection\n
+%c[0,100,255,150] • %c[ui_gray_2] Good All Rounder\n
+		</text>
+	</string>
+
+	<string id="st_zona_carrierplate2_name">
+		<text>Military Carrier Plate</text>
+	</string>
+	<string id="st_zona_carrierplate2_descr">
+                <text>A Ukrainian Army Issue Carrier (MCP). Assigned to some military personal upon completion of BT, A solid set of tactical armour and webbing forged in professional Military factories inside the country, 
+		combining the famously strong, MOLLE System Straps, and the usual bells and whistles of a army issue carrier, gives it a wide array of configuration for soldiers to equip 
+		extra mags, Armour Plates, protective hides, survival gears & other attachments to help with the abrasive world of the zone. Someting of a depenable option for the unprepared
+                Soldier in to face the threats of the zone.
+
+            Given that this Carrier Rig is one of Military design, suited for combat against hostile threats, it does not dissapoint in holding up for firefight standards within the zone, 
+            however it is naught without its flaws, the carrier does noting against the zones Anomalus areas, and radioactive hot spots. 
+            The Rig itself is also built fairly heavy, something a bit more weighy than your SPC and lesser fit users might find themselves tiring and exhaustion setting in faster, 
+            it also provides minor tear and rupture resistance against the army of the zones hostile mutants.\n \n
+%c[ui_gray_3]CHARACTERISTICS:\n
+%c[d_blue] • %c[ui_gray_2] Standard Military Use\n
+%c[d_blue] • %c[ui_gray_2] Increase Armor Plate Durability\n
+%c[d_blue] • %c[ui_gray_2] Increase Ballistic and Impact Protection\n
+%c[0,100,255,150] • %c[ui_gray_2] Protects against Ballistic and Impacts\n
+		</text>
+	</string>
+	
+	<string id="st_zona_carrierplate3_name">
+		<text>Duty Carrier Plate</text>
+	</string>
+	<string id="st_zona_carrierplate3_descr">
+        <text>A larger more protective and overall snug rigging. It being a custom assembled Carrier Rig based of the standard issue UAC (DCP). Along with some oddly useful changes combinations fixes and overall 
+        better quality of life. A near perfect companion for any dutyman ready to set off into the zone, Made by Dutys Reputable craftsman Magnum. 
+		Magnum being a former soldier and handy with a toolset, was perfect to create a duty specialised rigging. 
+		The Colonel put in a commision order right away, to give duty another edge against the zone and its threats.
+
+         Using generally a lot more higher quality materials, more kevlar and exter lower attachment slots sewn it this suit is a much more viable option over the standard issue UAC. 
+         More Padding and hunk, its perfect for dutys day to day clashes with the zone, Unfortunatley due to Magnum being intertwined with the booze he *might* of failed to 
+         balance the vest as a result. It mainly being a better protective casing against all sorts of mutant attacks but struggles with firearms and lesser explosives, 
+        so far most dutymen cannot complain about its effectiveness as being combined with one of their main activities mutant hunting, still magnum isnt sure if the Colonel is
+%c[ui_gray_3]CHARACTERISTICS:\n
+%c[d_blue] • %c[ui_gray_2] Blackop Operations\n
+%c[d_blue] • %c[ui_gray_2] Increase Armor Plate Durability\n
+%c[d_blue] • %c[ui_gray_2] Increases Slashing and Ripping Protection\n
+%c[0,100,255,150] • %c[ui_gray_2] Protects against Slashing and Ripping\n
+		</text>
+	</string>
+	
+	<string id="st_zona_carrierplate4_name">
+		<text>Merc Carrier Plate</text>
+	</string>
+	<string id="st_zona_carrierplate_descr4">
+		<text>A Carrier Rig imported to the zone from Western Countries (MCP). Most of these Rigs are imports straight from the heart of the USA itself, 
+		however some are from other similarly aligned countries to the USA. Aslan being a former ranger knows the value of what solid equipment can do for a soldier, 
+		using contacts from his "retirement" to the formation of his Mercenaries, building up a supply lines to provide his army of hired guns equipment at the highest price given that the mercs 
+		purely work for a monetary gain in the zone for a living.
+
+          Coming from first world countries with a solid defense budget, these Rigs have seen or their siblings been used in all sorts of deployments from the most backwards worn torn countries, 
+          to simple incursions of lowly armed rebels, the Merc Carrier Plate has to be the second best ballistic and impact resisitant rig in the zone. While it might fall short on its explosive 
+          defense abilities and mutant resistance it more than makes up for these downsides in its immense protection values, just know that you might aswell need to be a highly trained soldier to use 
+          the rig effectively given its immense weight and its unbalanced nature for protection, which some mercs would rather..\n \n
+%c[ui_gray_3]CHARACTERISTICS:\n
+%c[d_blue] • %c[ui_gray_2] Special Military Operations\n
+%c[d_blue] • %c[ui_gray_2] Increase Armor Plate Durability\n
+%c[d_blue] • %c[ui_gray_2] Increase Ballistic Protection\n
+%c[0,100,255,150] • %c[ui_gray_2] Good Ballistic and Impact Protection\n
+		</text>
+	</string>
+
+	<string id="st_zona_carrierplate5_name">
+		<text>Monolith Anti Shock Carrier Plate</text>
+	</string>
+	<string id="st_zona_carrierplate_descr5">
+		<text>Designed for demining operations, this vest provides protection against fragmentation and blast waves while allowing for mobility and flexibility.
+The vest provides protection against fragmentation and blast waves, with some models meeting STANAG 2920 standards with a V50 rating of 450 m/s..\n \n
+%c[ui_gray_3]CHARACTERISTICS:\n
+%c[d_blue] • %c[ui_gray_2] EOD Operations\n
+%c[d_blue] • %c[ui_gray_2] Increase Armor Plate Durability\n
+%c[d_blue] • %c[ui_gray_2] Increase Explosive Protection\n
+%c[0,100,255,150] • %c[ui_gray_2] High Explosive and Impact Protection\n
+		</text>
+	</string>
+
+</string_table>
