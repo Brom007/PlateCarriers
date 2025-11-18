@@ -1,0 +1,543 @@
+[tactec_carrier_storm]:af_base
+$spawn                                = "artefacts\af_plates"
+kind                                  = i_attach
+class                                 = SCRPTART
+visual                                = dynamics\equipments\aa\tactec_storm
+description                           = st_tactec_carrier_storm_descr
+inv_name                              = st_tactec_carrier_storm_name
+inv_name_short                        = st_tactec_carrier_storm_name
+
+; Weight of the empty vest only (no plates)
+inv_weight                            = 1.1
+
+icons_texture                         = ui\ui_plates
+inv_grid_width                        = 2
+inv_grid_height                       = 3
+inv_grid_x                            = 4
+inv_grid_y                            = 0
+
+cost                                  = 12600
+jump_height                           = 0.0
+
+af_rank                               = 1
+tier                                  = 0      ; no plates = no tier
+
+lights_enabled                        = false
+
+attach_angle_offset                   = 1.922,1.551,-0.740
+attach_position_offset                = 0.12,0.005,0.22
+attach_bone_name                      = bip01_r_spine
+auto_attach                           = false
+
+; No stat modifiers – the empty shell does nothing by itself
+health_restore_speed                  = 0
+radiation_restore_speed               = 0
+satiety_restore_speed                 = 0
+power_restore_speed                   = -0.00025
+bleeding_restore_speed                = 0
+
+; No protection – because plates are not inserted
+hit_absorbation_sect                  = tactec_carrier_storm_empty
+
+material                              = kevlar
+
+
+tier = 3
+
+[tactec_carrier_storm_absorbation]
+burn_immunity                         = 0
+strike_immunity                       = 0.03  ; fabric padding only
+shock_immunity                        = 0
+wound_immunity                        = 0.02
+radiation_immunity                    = 0
+telepatic_immunity                    = 0
+chemical_burn_immunity                = 0.02
+explosion_immunity                    = 0.01
+fire_wound_immunity                   = 0.0    ; NO bullet protection without plates
+
+-------------------------------------------------------------------------------------------------------------
+
+[ana_m2_carrier_emr]:af_base
+$spawn                                = "artefacts\af_plates"
+kind                                  = i_attach
+class                                 = SCRPTART
+visual                                = dynamics\equipments\aa\ana_m2_emr
+description                           = st_ana_m2_carrier_emr_descr
+inv_name                              = st_ana_m2_carrier_emr_name
+inv_name_short                        = st_ana_m2_carrier_emr_name
+
+; Empty carrier weight only (nylon + molle straps)
+inv_weight                            = 1.3
+
+icons_texture                         = ui\ui_plates
+inv_grid_width                        = 2
+inv_grid_height                       = 3
+inv_grid_x                            = 6
+inv_grid_y                            = 0
+
+cost                                  = 13800     ; slightly above TacTec due to build quality
+jump_height                           = 0.0
+
+af_rank                               = 1
+tier                                  = 0        ; no plates = no armor tier
+
+lights_enabled                        = false
+
+attach_angle_offset                   = 1.922,1.551,-0.740
+attach_position_offset                = 0.11,0.004,0.20
+attach_bone_name                      = bip01_r_spine
+auto_attach                           = false
+
+; No stat modifiers for empty chassis
+health_restore_speed                  = 0
+radiation_restore_speed               = 0
+satiety_restore_speed                 = 0
+power_restore_speed                   = -0.00030
+bleeding_restore_speed                = 0
+
+; Empty shell — no armor without plates
+hit_absorbation_sect                  = ana_m2_carrier_emr_empty
+
+material                              = kevlar
+
+tier = 3
+
+[ana_m2_carrier_emr_absorbation]
+burn_immunity                         = 0
+strike_immunity                       = 0.05     ; thicker padding
+shock_immunity                        = 0
+wound_immunity                        = 0.03
+radiation_immunity                    = 0
+telepatic_immunity                    = 0
+chemical_burn_immunity                = 0.02
+explosion_immunity                    = 0.01
+fire_wound_immunity                   = 0.0      ; no ballistic resistance
+-------------------------------------------------------------------------------------------------------------
+
+[cqc_osprey_mk4a_mtp]:af_base
+$spawn                                = "artefacts\af_plates"
+kind                                  = i_attach
+class                                 = SCRPTART
+visual                                = dynamics\equipments\aa\osprey_mk4a_mtp
+description                           = st_cqc_osprey_mk4a_mtp_descr
+inv_name                              = st_cqc_osprey_mk4a_mtp_name
+inv_name_short                        = st_cqc_osprey_mk4a_mtp_name
+
+; Osprey Mk4A has a heavier padded base vest (no plates)
+inv_weight                            = 1.9
+
+icons_texture                         = ui\ui_plates
+inv_grid_width                        = 2
+inv_grid_height                       = 3
+inv_grid_x                            = 8
+inv_grid_y                            = 0
+
+cost                                  = 15900
+jump_height                           = 0.0
+
+af_rank                               = 1
+tier                                  = 0        ; empty vest, no armor tier
+
+lights_enabled                        = false
+
+; Slightly adjusted offsets due to bulkier back panel
+attach_angle_offset                   = 1.922,1.551,-0.740
+attach_position_offset                = 0.10,0.006,0.19
+attach_bone_name                      = bip01_r_spine
+auto_attach                           = false
+
+; No artefact-style stat effects
+health_restore_speed                  = 0
+radiation_restore_speed               = 0
+satiety_restore_speed                 = 0
+power_restore_speed                   = -0.00040   ; heavier/bulkier vest
+bleeding_restore_speed                = 0
+
+; Empty fabric carrier = no real armor yet
+hit_absorbation_sect                  = cqc_osprey_mk4a_mtp_empty
+
+material                              = kevlar
+
+tier = 3
+
+[cqc_osprey_mk4a_mtp_absorbation]
+burn_immunity                         = 0
+strike_immunity                       = 0.07    ; very thick padded carrier
+shock_immunity                        = 0
+wound_immunity                        = 0.04
+radiation_immunity                    = 0
+telepatic_immunity                    = 0
+chemical_burn_immunity                = 0.02
+explosion_immunity                    = 0.015
+fire_wound_immunity                   = 0.0     ; no plates = no bullet protection
+-------------------------------------------------------------------------------------------------------------
+
+[cyre_avs_tagilla]:af_base
+$spawn                                = "artefacts\af_plates"
+kind                                  = i_attach
+class                                 = SCRPTART
+visual                                = dynamics\equipments\aa\cyre_avs_tagilla
+description                           = st_cyre_avs_tagilla_descr
+inv_name                              = st_cyre_avs_tagilla_name
+inv_name_short                        = st_cyre_avs_tagilla_name
+
+; Empty carrier weight only (fabric, molle webbing, Tagilla edition panels)
+inv_weight                            = 1.7
+
+icons_texture                         = ui\ui_plates
+inv_grid_width                        = 2
+inv_grid_height                       = 3
+inv_grid_x                            = 10
+inv_grid_y                            = 0
+
+cost                                  = 16800
+jump_height                           = 0.0
+
+af_rank                               = 1
+tier                                  = 0      ; empty vest = no tier
+
+lights_enabled                        = false
+
+; Attachment offsets
+attach_angle_offset                   = 1.922,1.551,-0.740
+attach_position_offset                = 0.11,0.005,0.21
+attach_bone_name                      = bip01_r_spine
+auto_attach                           = false
+
+; No artefact-like effects
+health_restore_speed                  = 0
+radiation_restore_speed               = 0
+satiety_restore_speed                 = 0
+power_restore_speed                   = -0.00038   ; medium-weighted carrier
+bleeding_restore_speed                = 0
+
+; Empty shell — no real armor protection
+hit_absorbation_sect                  = cyre_avs_tagilla_empty
+
+material                              = kevlar
+
+tier = 3
+
+[cyre_avs_tagilla_absorbation]
+burn_immunity                         = 0
+strike_immunity                       = 0.06    ; padding against blunt force
+shock_immunity                        = 0
+wound_immunity                        = 0.03
+radiation_immunity                    = 0
+telepatic_immunity                    = 0
+chemical_burn_immunity                = 0.02
+explosion_immunity                    = 0.015
+fire_wound_immunity                   = 0.0     ; no ballistic plates yet
+
+-------------------------------------------------------------------------------------------------------------
+
+[eagle_mmac_carrier]:af_base
+$spawn                                = "artefacts\af_plates"
+kind                                  = i_attach
+class                                 = SCRPTART
+visual                                = dynamics\equipments\aa\eagle_mmac
+description                           = st_eagle_mmac_carrier_descr
+inv_name                              = st_eagle_mmac_carrier_name
+inv_name_short                        = st_eagle_mmac_carrier_name
+
+; Base carrier weight only (no plates)
+inv_weight                            = 1.5
+
+icons_texture                         = ui\ui_plates
+inv_grid_width                        = 2
+inv_grid_height                       = 3
+inv_grid_x                            = 12
+inv_grid_y                            = 0
+
+cost                                  = 15500
+jump_height                           = 0.0
+
+af_rank                               = 1
+tier                                  = 0       ; no armor yet
+
+lights_enabled                        = false
+
+; Attachment offsets for proper in-hand/world positioning
+attach_angle_offset                   = 1.922,1.551,-0.740
+attach_position_offset                = 0.11,0.004,0.20
+attach_bone_name                      = bip01_r_spine
+auto_attach                           = false
+
+; No stat effects without plates
+health_restore_speed                  = 0
+radiation_restore_speed               = 0
+satiety_restore_speed                 = 0
+power_restore_speed                   = -0.00035
+bleeding_restore_speed                = 0
+
+; Empty fabric carrier = minimal protection
+hit_absorbation_sect                  = eagle_mmac_carrier_empty
+
+material                              = kevlar
+
+tier = 3
+
+[eagle_mmac_carrier_absorbation]
+[eagle_mmac_carrier_empty]
+burn_immunity                         = 0
+strike_immunity                       = 0.05    ; basic padding
+shock_immunity                        = 0
+wound_immunity                        = 0.03
+radiation_immunity                    = 0
+telepatic_immunity                    = 0
+chemical_burn_immunity                = 0.02
+explosion_immunity                    = 0.01
+fire_wound_immunity                   = 0.0     ; plates required for ballistic protection
+
+-------------------------------------------------------------------------------------------------------------
+
+[eclipse_rbavaf_carrier]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\plates_rbavaf
+description                              = st_zona_rbavaf_descr
+inv_name                                 = st_zona_rbavaf_name
+inv_name_short                           = st_zona_rbavaf_name
+inv_weight                               = 2.8          ; empty carrier mass (approx)
+icons_texture                            = ui\ui_plates
+inv_grid_width                           = 2
+inv_grid_height                          = 2
+inv_grid_x                               = 0
+inv_grid_y                               = 0
+cost                                     = 28400
+jump_height                              = 0.0
+
+; Detector visual effects
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.9,0.4,0.2
+trail_light_range                        = 2.0
+
+; World attachment offsets (adjust if clipping)
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.15,0.002,0.25
+attach_bone_name                         = bip01_r_hand
+auto_attach                              = false
+
+; Stats (base carrier has no passive effects)
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00065     ; mild stamina drag from wearing gear
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = zona_rbavaf_absorbation ; define separately for balance
+
+artefact_activation_seq                  = zona_rbavaf_bold
+
+repair_part_bonus                        = 0.10
+
+material                                 = cordura_500d
+tier = 3
+
+[zona_rbavaf_absorbation]
+burn_protection = 0.0
+shock_protection = 0.0
+radiation_protection = 0.0
+chemical_burn_protection = 0.0
+telepatic_protection = 0.0
+strike_protection = 0.05       ; straps + padding only
+wound_protection = 0.03
+explosion_protection = 0.02
+fire_wound_protection = 0.04
+
+
+-------------------------------------------------------------------------------------------------------------
+
+[stichprofi_carrier]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\plates_stichprofi
+description                              = st_zona_stichprofi_descr
+inv_name                                 = st_zona_stichprofi_name
+inv_name_short                           = st_zona_stichprofi_name
+inv_weight                               = 2.4            ; empty mass ~2.3–2.5kg
+icons_texture                            = ui\ui_plates
+inv_grid_width                           = 2
+inv_grid_height                          = 2
+inv_grid_x                               = 0
+inv_grid_y                               = 0
+cost                                     = 19800
+jump_height                              = 0.0
+
+; FX for detectors
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.9,0.4,0.2
+trail_light_range                        = 2.0
+
+; world offsets (same baseline as others)
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.15,0.002,0.25
+attach_bone_name                         = bip01_r_hand
+auto_attach                              = false
+
+; Passive stats (base carrier only)
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00055     ; light load penalty – less than heavier carriers
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = zona_stichprofi_absorbation
+
+artefact_activation_seq                  = zona_stichprofi_bold
+
+repair_part_bonus                        = 0.08
+
+material                                 = cordura_1000d
+
+tier = 3
+
+[zona_stichprofi_absorbation]
+burn_protection            = 0.0
+shock_protection           = 0.0
+radiation_protection       = 0.0
+chemical_burn_protection   = 0.0
+telepatic_protection       = 0.0
+strike_protection          = 0.04       ; padded shoulders + cummerbund
+wound_protection           = 0.03
+explosion_protection       = 0.02
+fire_wound_protection      = 0.03
+
+
+-------------------------------------------------------------------------------------------------------------
+[tasmanian_sk_carrier]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\plates_ttsk
+description                              = st_zona_ttsk_descr
+inv_name                                 = st_zona_ttsk_name
+inv_name_short                           = st_zona_ttsk_name
+inv_weight                               = 1.35              ; SK is extremely light (1.3–1.4kg)
+icons_texture                            = ui\ui_plates
+inv_grid_width                           = 2
+inv_grid_height                          = 2
+inv_grid_x                               = 0
+inv_grid_y                               = 0
+cost                                     = 16750
+jump_height                              = 0.0
+
+; detector FX hooks
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.9,0.4,0.2
+trail_light_range                        = 2.0
+
+; world offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.15,0.002,0.25
+attach_bone_name                         = bip01_r_hand
+auto_attach                              = false
+
+; Passive biological & stamina influences
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00035         ; very minor stamina load
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = zona_ttsk_absorbation
+
+artefact_activation_seq                  = zona_ttsk_bold
+
+repair_part_bonus                        = 0.06              ; simpler carrier
+
+material                                 = cordura_700d
+tier                                     = 2
+
+[zona_ttsk_absorbation]
+burn_protection              = 0.0
+shock_protection             = 0.0
+radiation_protection         = 0.0
+chemical_burn_protection     = 0.0
+telepatic_protection         = 0.0
+
+strike_protection            = 0.02     ; thin shoulder padding
+wound_protection             = 0.02
+explosion_protection         = 0.01
+fire_wound_protection        = 0.02
+
+
+-------------------------------------------------------------------------------------------------------------
+[wartech_tv110_carrier]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\plates_tv110
+description                              = st_zona_tv110_descr
+inv_name                                 = st_zona_tv110_name
+inv_name_short                           = st_zona_tv110_name
+inv_weight                               = 2.0                   ; TV‑110 weight ~1.9–2.1kg
+icons_texture                            = ui\ui_plates
+inv_grid_width                           = 2
+inv_grid_height                          = 2
+inv_grid_x                               = 0
+inv_grid_y                                = 0
+cost                                     = 22850
+jump_height                              = 0.0
+
+; FX handler for detectors
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.9,0.4,0.2
+trail_light_range                        = 2.0
+
+; world offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.15,0.002,0.25
+attach_bone_name                         = bip01_r_hand
+auto_attach                              = false
+
+; Metabolic / stamina influences
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00065           ; heavier + larger surface area padding
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = zona_tv110_absorbation
+
+artefact_activation_seq                  = zona_tv110_bold
+
+repair_part_bonus                        = 0.10               ; mid‑complexity carrier
+
+material                                 = cordura_1000d
+tier                                     = 3
+
+
+[zona_tv110_absorbation]
+burn_protection              = 0.0
+shock_protection             = 0.0
+radiation_protection         = 0.0
+chemical_burn_protection     = 0.0
+telepatic_protection         = 0.0
+
+strike_protection            = 0.06      ; thick shoulder + cummerbund padding
+wound_protection             = 0.05
+explosion_protection         = 0.03
+fire_wound_protection        = 0.05
