@@ -1,1 +1,570 @@
+[azimut_zhuk_harness]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\zhuk_harness
+description                              = st_azimut_zhuk_descr
+inv_name                                 = st_azimut_zhuk_name
+inv_name_short                           = st_azimut_zhuk_name
+inv_weight                               = 0.85             ; very light, textile harness only
+icons_texture                            = ui\ui_chestrigs
+inv_grid_width                           = 2
+inv_grid_height                          = 1
+inv_grid_x                               = 0
+inv_grid_y                               = 0
+cost                                     = 6400
+jump_height                              = 0.0
 
+; Detector FX hooks
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.8,0.6,0.2
+trail_light_range                        = 1.5
+
+; World attachment offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.12,0.005,0.18
+attach_bone_name                         = bip01_r_spine
+auto_attach                              = false
+
+; Passive effects
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00015      ; very minor stamina penalty
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = azimut_zhuk_absorbation
+
+artefact_activation_seq                  = azimut_zhuk_bold
+
+repair_part_bonus                        = 0.05
+
+material                                 = cordura_500d
+tier                                     = 1
+
+[azimut_zhuk_absorbation]
+burn_protection              = 0.0
+shock_protection             = 0.0
+radiation_protection         = 0.0
+chemical_burn_protection     = 0.0
+telepatic_protection         = 0.0
+
+strike_protection            = 0.01      ; thin harness padding
+wound_protection             = 0.01
+explosion_protection         = 0.01
+fire_wound_protection        = 0.01
+
+-----------------------------------------------------------------------------
+
+[csa_chest_rig]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\csa_rig
+description                              = st_csa_rig_descr
+inv_name                                 = st_csa_rig_name
+inv_name_short                           = st_csa_rig_name
+inv_weight                               = 0.72                ; light textile rig
+icons_texture                            = ui\ui_chestrigs
+inv_grid_width                           = 2
+inv_grid_height                          = 1
+inv_grid_x                               = 0
+inv_grid_y                               = 1
+cost                                     = 5800
+jump_height                              = 0.0
+
+; Detector FX
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.8,0.6,0.2
+trail_light_range                        = 1.4
+
+; Attachment offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.11,0.005,0.17
+attach_bone_name                         = bip01_r_spine
+auto_attach                              = false
+
+; Passive stats (rig only)
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00012        ; almost no penalty
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = csa_rig_absorbation
+
+artefact_activation_seq                  = csa_rig_bold
+
+repair_part_bonus                        = 0.04
+
+material                                 = cordura_600d
+tier                                     = 1
+
+[csa_rig_absorbation]
+burn_protection              = 0.0
+shock_protection             = 0.0
+radiation_protection         = 0.0
+chemical_burn_protection     = 0.0
+telepatic_protection         = 0.0
+
+strike_protection            = 0.01      ; thin textile
+wound_protection             = 0.01
+explosion_protection         = 0.01
+fire_wound_protection        = 0.01
+
+
+-----------------------------------------------------------------------------
+
+
+[lbt_1961a_rig]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\lbt_1961a
+description                              = st_lbt1961a_descr
+inv_name                                 = st_lbt1961a_name
+inv_name_short                           = st_lbt1961a_name
+inv_weight                               = 1.60                 ; real‑world weight ~1.5–1.7kg
+icons_texture                            = ui\ui_chestrigs
+inv_grid_width                           = 3
+inv_grid_height                          = 1
+inv_grid_x                               = 0
+inv_grid_y                               = 2
+cost                                     = 11400
+jump_height                              = 0.0
+
+; Detector FX
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.85,0.55,0.25
+trail_light_range                        = 1.8
+
+; Attachment offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.13,0.004,0.19
+attach_bone_name                         = bip01_r_spine
+auto_attach                              = false
+
+; Passive metabolic effects
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00035           ; moderate stamina drain
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = lbt1961a_absorbation
+
+artefact_activation_seq                  = lbt1961a_bold
+
+repair_part_bonus                        = 0.07
+
+material                                 = cordura_1000d
+tier                                     = 2
+
+
+[lbt1961a_absorbation]
+burn_protection              = 0.0
+shock_protection             = 0.0
+radiation_protection         = 0.0
+chemical_burn_protection     = 0.0
+telepatic_protection         = 0.0
+
+strike_protection            = 0.03      ; thick pouches + padded shoulder straps
+wound_protection             = 0.03
+explosion_protection         = 0.02
+fire_wound_protection        = 0.03
+
+
+-----------------------------------------------------------------------------
+[scav_vest]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\scav_vest
+description                              = st_scav_vest_descr
+inv_name                                 = st_scav_vest_name
+inv_name_short                           = st_scav_vest_name
+inv_weight                               = 0.45                 ; very light
+icons_texture                            = ui\ui_chestrigs
+inv_grid_width                           = 2
+inv_grid_height                          = 1
+inv_grid_x                               = 0
+inv_grid_y                               = 3
+cost                                     = 1800                 ; garbage‑tier price
+jump_height                              = 0.0
+
+; Detector FX
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.7,0.6,0.2
+trail_light_range                        = 1.0
+
+; Attachment offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.11,0.003,0.16
+attach_bone_name                         = bip01_r_spine
+auto_attach                              = false
+
+; Passive metabolic effects
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00005           ; almost no load
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = scav_vest_absorbation
+
+artefact_activation_seq                  = scav_vest_bold
+
+repair_part_bonus                        = 0.02               ; barely a real piece of gear
+
+material                                 = patched_cloth
+tier                                     = 0                  ; absolute lowest tier
+
+
+[scav_vest_absorbation]
+burn_protection              = 0.0
+shock_protection             = 0.0
+radiation_protection         = 0.0
+chemical_burn_protection     = 0.0
+telepatic_protection         = 0.0
+
+strike_protection            = 0.005      ; thin fabric + junk stuffing
+wound_protection             = 0.005
+explosion_protection         = 0.003
+fire_wound_protection        = 0.005
+
+-----------------------------------------------------------------------------
+[spiritus_chest_rig]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\spiritus_rig
+description                              = st_spiritus_rig_descr
+inv_name                                 = st_spiritus_rig_name
+inv_name_short                           = st_spiritus_rig_name
+inv_weight                               = 0.95                ; ultralight, ~1kg
+icons_texture                            = ui\ui_chestrigs
+inv_grid_width                           = 2
+inv_grid_height                          = 1
+inv_grid_x                               = 0
+inv_grid_y                               = 0
+cost                                     = 10250
+jump_height                              = 0.0
+
+; Detector FX
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.85,0.55,0.25
+trail_light_range                        = 1.5
+
+; World attachment offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.12,0.004,0.18
+attach_bone_name                         = bip01_r_spine
+auto_attach                              = false
+
+; Passive effects
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00020         ; very minor stamina impact
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = spiritus_rig_absorbation
+
+artefact_activation_seq                  = spiritus_rig_bold
+
+repair_part_bonus                        = 0.05
+
+material                                 = cordura_500d
+tier                                     = 1
+
+[spiritus_rig_absorbation]
+burn_protection              = 0.0
+shock_protection             = 0.0
+radiation_protection         = 0.0
+chemical_burn_protection     = 0.0
+telepatic_protection         = 0.0
+
+strike_protection            = 0.015      ; small padded areas
+wound_protection             = 0.015
+explosion_protection         = 0.01
+fire_wound_protection        = 0.015
+
+
+-----------------------------------------------------------------------------
+[stichprofi_mk2_atacs]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\stichprofi_mk2_atacs
+description                              = st_stichprofi_mk2_descr
+inv_name                                 = st_stichprofi_mk2_name
+inv_name_short                           = st_stichprofi_mk2_name
+inv_weight                               = 1.15                ; slightly heavier than Mk1
+icons_texture                            = ui\ui_chestrigs
+inv_grid_width                           = 2
+inv_grid_height                          = 1
+inv_grid_x                               = 0
+inv_grid_y                               = 0
+cost                                     = 8500
+jump_height                              = 0.0
+
+; Detector FX
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.85,0.55,0.25
+trail_light_range                        = 1.5
+
+; World offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.13,0.004,0.18
+attach_bone_name                         = bip01_r_spine
+auto_attach                              = false
+
+; Passive effects
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00025        ; moderate penalty
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = stichprofi_mk2_absorbation
+
+artefact_activation_seq                  = stichprofi_mk2_bold
+
+repair_part_bonus                        = 0.05
+
+material                                 = cordura_700d
+tier                                     = 1
+
+
+[stichprofi_mk2_absorbation]
+burn_protection              = 0.0
+shock_protection             = 0.0
+radiation_protection         = 0.0
+chemical_burn_protection     = 0.0
+telepatic_protection         = 0.0
+
+strike_protection            = 0.02      ; padded shoulders + cummerbund
+wound_protection             = 0.02
+explosion_protection         = 0.015
+fire_wound_protection        = 0.02
+
+-----------------------------------------------------------------------------
+[type56_chicom_harness]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\type56_harness
+description                              = st_type56_chicom_descr
+inv_name                                 = st_type56_chicom_name
+inv_name_short                           = st_type56_chicom_name
+inv_weight                               = 0.65                 ; very light textile
+icons_texture                            = ui\ui_chestrigs
+inv_grid_width                           = 2
+inv_grid_height                          = 1
+inv_grid_x                               = 0
+inv_grid_y                               = 4
+cost                                     = 4500                 ; low-tier
+jump_height                              = 0.0
+
+; Detector FX
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 0
+lights_enabled                           = false
+trail_light_color                        = 0.75,0.55,0.2
+trail_light_range                        = 1.2
+
+; World attachment offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.11,0.003,0.16
+attach_bone_name                         = bip01_r_spine
+auto_attach                              = false
+
+; Passive effects
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00010           ; negligible stamina impact
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = type56_chicom_absorbation
+
+artefact_activation_seq                  = type56_chicom_bold
+
+repair_part_bonus                        = 0.03
+
+material                                 = canvas_600d
+tier                                     = 0                  ; low-tier rig
+
+
+[type56_chicom_absorbation]
+burn_protection              = 0.0
+shock_protection             = 0.0
+radiation_protection         = 0.0
+chemical_burn_protection     = 0.0
+telepatic_protection         = 0.0
+
+strike_protection            = 0.01      ; minimal fabric padding
+wound_protection             = 0.01
+explosion_protection         = 0.005
+fire_wound_protection        = 0.01
+
+-----------------------------------------------------------------------------
+[umtbs_6sh112_scot_sniper]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\6sh112_scot
+description                              = st_umtbs_6sh112_scot_descr
+inv_name                                 = st_umtbs_6sh112_scot_name
+inv_name_short                           = st_umtbs_6sh112_scot_name
+inv_weight                               = 1.10                 ; textile + stiffened panels
+icons_texture                            = ui\ui_chestrigs
+inv_grid_width                           = 3
+inv_grid_height                          = 2
+inv_grid_x                               = 3
+inv_grid_y                               = 4
+cost                                     = 9800                 ; mid-tier rig
+jump_height                              = 0.0
+
+; Detector FX
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 1
+lights_enabled                           = false
+trail_light_color                        = 0.8,0.6,0.25
+trail_light_range                        = 1.3
+
+; World attachment offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.14,0.004,0.19
+attach_bone_name                         = bip01_r_spine
+auto_attach                              = false
+
+; Passive Effects
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00025            ; moderate stamina tax
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = umtbs_6sh112_scot_absorbation
+
+artefact_activation_seq                  = umtbs_6sh112_scot_bold
+
+repair_part_bonus                        = 0.06                ; robust construction
+
+material                                 = cordura_1000d
+tier                                     = 1                   ; mid-tier rig
+
+[umtbs_6sh112_scot_absorbation]
+burn_protection              = 0.00
+shock_protection             = 0.00
+radiation_protection         = 0.00
+chemical_burn_protection     = 0.00
+telepatic_protection         = 0.00
+
+strike_protection            = 0.04      ; better fabric + stiffeners
+wound_protection             = 0.03
+explosion_protection         = 0.015
+fire_wound_protection        = 0.02
+
+
+
+
+-----------------------------------------------------------------------------
+[zulu_m4_reducedsig]:af_base
+$spawn                                   = "artefacts\af_plates"
+kind                                     = i_attach
+class                                    = SCRPTART
+visual                                   = dynamics\equipments\aa\zulu_m4_reducedsig
+description                              = st_zulu_m4_reducedsig_descr
+inv_name                                 = st_zulu_m4_reducedsig_name
+inv_name_short                           = st_zulu_m4_reducedsig_name
+inv_weight                               = 0.55                 ; extremely light
+icons_texture                            = ui\ui_chestrigs
+inv_grid_width                           = 2
+inv_grid_height                          = 1
+inv_grid_x                               = 6
+inv_grid_y                               = 4
+cost                                     = 11200                ; premium ultralight rig
+jump_height                              = 0.0
+
+; Detector FX
+det_show_particles                       = artefact\af_thermal_show
+det_hide_particles                       = artefact\af_thermal_hide
+particles_bone                           = joint2
+
+af_rank                                  = 1
+lights_enabled                           = false
+trail_light_color                        = 0.82,0.66,0.28
+trail_light_range                        = 1.3
+
+; World attachment offsets
+attach_angle_offset                      = 1.922,1.551,-0.740
+attach_position_offset                   = 0.13,0.002,0.17
+attach_bone_name                         = bip01_r_spine
+auto_attach                              = false
+
+; Passive Effects
+health_restore_speed                     = 0
+radiation_restore_speed                  = 0
+satiety_restore_speed                    = 0
+power_restore_speed                      = -0.00015            ; minimal stamina impact
+bleeding_restore_speed                   = 0
+
+hit_absorbation_sect                     = zulu_m4_reducedsig_absorbation
+
+artefact_activation_seq                  = zulu_m4_reducedsig_bold
+
+repair_part_bonus                        = 0.05                ; good American construction
+
+material                                 = cordura_500d
+tier                                     = 1                   ; lightweight but premium
+
+
+[zulu_m4_reducedsig_absorbation]
+burn_protection              = 0.00
+shock_protection             = 0.00
+radiation_protection         = 0.00
+chemical_burn_protection     = 0.00
+telepatic_protection         = 0.00
+
+strike_protection            = 0.02      ; extremely light padding
+wound_protection             = 0.02
+explosion_protection         = 0.01
+fire_wound_protection        = 0.015
